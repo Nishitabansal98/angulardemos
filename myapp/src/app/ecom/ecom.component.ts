@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-ecom',
@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ecom.component.css']
 })
 export class EcomComponent implements OnInit {
-
+  @Input()
+  productElement: {
+    name: string;
+    quantity: number;
+    status: string;
+  };
   constructor() { }
 
   ngOnInit(): void {

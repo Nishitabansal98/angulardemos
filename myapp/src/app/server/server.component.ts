@@ -8,13 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class ServerComponent implements OnInit {
   serverId: number = 10;
   serverStatus: string ='online';
+  allowNewServer = false;
 
   constructor() { }
-
-
-  
   ngOnInit(): void {}
     getServerStatus(){
-      return ' ss: ' + this.serverStatus;    }
+      return this.serverStatus;    }
   }
 

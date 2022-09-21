@@ -12,6 +12,8 @@ export class ProductComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {}
-  
+  getColor(){
+    return this.productStatus === 'InStock' ? 'green' : 'red';
+  }
 
 }

@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
-  allowNewProduct = false;
+  productId = 10;
+  productStatus = 'InStock';
   
   constructor() { }
 

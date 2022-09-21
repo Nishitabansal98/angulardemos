@@ -7,8 +7,12 @@
 </button>
 <p *ngIf="productCreated">{{ productCreationStatus }}</p>
 
+<app-product></app-product>
+
+<br />
+<br />
+<br />
+
 <label>Product Name</label>
 <input type="text" class="form-control" [(ngModel)]="productName" />
 <p>{{ productName }}</p>
-
-<app-product></app-product>

@@ -10,9 +10,14 @@ export class ServerComponent implements OnInit {
   serverStatus: string ='online';
   allowNewServer = false;
 
+
   constructor() { }
   ngOnInit(): void {}
     getServerStatus(){
-      return this.serverStatus;    }
+      return this.serverStatus;    
+    }
+    onCreateServer(){
+      console.log("server is created");
+    }
   }
 

@@ -5,7 +5,7 @@
 >
   Add Product
 </button>
-<p ngIf="productCreated">{{ productCreationStatus }}</p>
+<p *ngIf="productCreated">{{ productCreationStatus }}</p>
 
 <label>Product Name</label>
 <input type="text" class="form-control" [(ngModel)]="productName" />

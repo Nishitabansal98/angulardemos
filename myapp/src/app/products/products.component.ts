@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 allowNewProduct = true;
 productCreationStatus = "No product Added"
-productName = ''
+productName = 'Default Product';
+productCreated = false;
   constructor() { }
 
   ngOnInit(): void {}
+
     onCreateProduct() {
-      this.productCreationStatus = "Product Added !!!!";
-    }
+      this.productCreationStatus = "Product Added !!";
+      this.productCreated = true;
+     }
   }

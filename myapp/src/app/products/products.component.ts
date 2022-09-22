@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 allowNewProduct = true;
 productCreationStatus = "No product Added"
-productName = 'Default Product';
+productName = ' ';
 productCreated = false;
 products = [];
 constructor() { }
@@ -16,7 +16,9 @@ constructor() { }
   ngOnInit(): void {}
 
     onCreateProduct() {
+      this.products.push(this.productName);
       this.productCreationStatus = "Product Added !!";
       this.productCreated = true;
+      console.log(this.products);
      }
   }

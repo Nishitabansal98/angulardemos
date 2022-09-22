@@ -15,5 +15,4 @@ export class ProductComponent implements OnInit {
   getColor(){
     return this.productStatus === 'InStock' ? 'green' : 'red';
   }
-
 }

@@ -6,7 +6,7 @@
   class="btn btn-sm btn-secondary mt=2"
   [disabled]="!allowNewProduct"
   (click)="onCreateProduct()"
->
+></button>
   Add Product
 </button>
 <!-- <p *ngIf="productCreated">{{ productCreationStatus }}</p> -->
@@ -14,4 +14,5 @@
 <div class="container">
   <p *ngfor="let product of products">{{ product }}</p>
 </div>
+
 <!-- <app-product></app-product> -->

@@ -9,10 +9,6 @@ export class ProductComponent implements OnInit {
   productId = 10;
   productStatus = 'InStock';
   
-
-
-
-  
   constructor() { }
 
   ngOnInit(): void {}

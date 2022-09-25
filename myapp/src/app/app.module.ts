@@ -8,6 +8,7 @@ import { ProductComponent } from './products/product/product.component';
 import { FormsModule } from '@angular/forms';
 import { EcommComponent } from './ecomm/ecomm.component';
 import { CartComponent } from './ecomm/cart/cart.component';
+import { EcomproductComponent } from './ecomm/ecomproduct/ecomproduct.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { CartComponent } from './ecomm/cart/cart.component';
     ProductComponent,
     EcommComponent,
     CartComponent,
+    EcomproductComponent,
   ],
   imports: [
     BrowserModule, FormsModule],

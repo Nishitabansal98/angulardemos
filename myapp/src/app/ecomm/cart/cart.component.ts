@@ -27,5 +27,6 @@ export class CartComponent implements OnInit {
     };
     console.log(product);
     this.productAdded.emit(product);
+     
   }
 }

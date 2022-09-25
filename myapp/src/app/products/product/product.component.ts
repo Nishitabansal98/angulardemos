@@ -10,6 +10,7 @@ export class ProductComponent implements OnInit {
   productStatus = 'InStock';
   
   constructor() { }
+  
 
   ngOnInit(): void {}
   getColor(){
